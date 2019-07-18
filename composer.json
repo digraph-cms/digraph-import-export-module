@@ -1,0 +1,17 @@
+{
+    "name": "digraphcms/digraph-import-export",
+    "description": "Digraph module to provide importing and exporting of content.",
+    "type": "digraph-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joby Elliott",
+            "email": "joby@byjoby.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Digraph\\Modules\\ImportExport\\": "src/"
+        }
+    }
+}

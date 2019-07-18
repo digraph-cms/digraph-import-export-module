@@ -1,0 +1,28 @@
+module:
+  name: digraph_import_export
+  namespace: Digraph\Modules\ImportExport
+
+actions:
+  categorical:
+    _controlpanel:
+      importexport: _importexport/display
+    _importexport:
+      import: _importexport/import
+      export: _importexport/export
+
+navigation:
+  parents:
+    common:
+      _importexport/display: _controlpanel/display
+      _importexport/*: _importexport/display
+
+permissions:
+  url:
+    _importexport/*: [deny all, allow group webmaster]
+
+strings:
+  urls:
+    common:
+      _importexport/display: Import/Export Content
+      _importexport/import: Import
+      _importexport/export: Export
